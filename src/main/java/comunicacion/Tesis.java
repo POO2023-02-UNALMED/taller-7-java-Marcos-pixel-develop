@@ -14,9 +14,7 @@ public class Tesis extends Escrito{
 		this.referencias = referencias;
 		this.conclusion= conclusion;
 		this.interpretacion = interpretacion;
-		for(int i =0; i<argumentos.length;i++) {
-			Tesis.argumentos[i]=argumentos[i] ;
-		}
+		Tesis.argumentos = argumentos;
 		values[0] = this.idea;
 		values[1] = this.conclusion;
 		values[2] = this.referencias;
