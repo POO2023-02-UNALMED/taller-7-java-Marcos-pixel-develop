@@ -36,17 +36,14 @@ public class Fabula extends Escrito{
 	        return ensenanza;
 	    }
 
-	    // Setter para el atributo 'enseñanza'
-	    public void setEnsenanza(String enseñanza) {
-	        this.ensenanza = enseñanza;
+	    public void setEnsenanza(String ensenanza) {
+	        this.ensenanza = ensenanza;
 	    }
 
-	    // Getter para el atributo 'interpretacion'
 	    public String getInterpretacion() {
 	        return interpretacion;
 	    }
 
-	    // Setter para el atributo 'interpretacion'
 	    public void setInterpretacion(String interpretacion) {
 	        this.interpretacion = interpretacion;
 	    }

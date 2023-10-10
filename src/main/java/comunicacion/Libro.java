@@ -38,37 +38,30 @@ public class Libro extends Escrito{
         return co_autor;
     }
 
-    // Setter para el atributo 'co_autor'
     public void setCo_autor(String co_autor) {
         this.co_autor = co_autor;
     }
 
-    // Getter para el atributo 'editorial'
     public String getEditorial() {
         return editorial;
     }
 
-    // Setter para el atributo 'editorial'
     public void setEditorial(String editorial) {
         this.editorial = editorial;
     }
 
-    // Getter para el atributo 'edicion'
     public String getEdicion() {
         return edicion;
     }
 
-    // Setter para el atributo 'edicion'
     public void setEdicion(String edicion) {
         this.edicion = edicion;
     }
 
-    // Getter para el atributo 'interpretacion'
     public String getInterpretacion() {
         return interpretacion;
     }
 
-    // Setter para el atributo 'interpretacion'
     public void setInterpretacion(String interpretacion) {
         this.interpretacion = interpretacion;
     }

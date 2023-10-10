@@ -20,27 +20,22 @@ public class Periodico extends Escrito{
         return fecha;
     }
 
-    // Setter para el atributo 'fecha'
     public void setFecha(String fecha) {
         this.fecha = fecha;
     }
 
-    // Getter para el atributo 'primicia'
     public String getPrimicia() {
         return primicia;
     }
 
-    // Setter para el atributo 'primicia'
     public void setPrimicia(String primicia) {
         this.primicia = primicia;
     }
 
-    // Getter para el atributo 'interpretacion'
     public String getInterpretacion() {
         return interpretacion;
     }
 
-    // Setter para el atributo 'interpretacion'
     public void setInterpretacion(String interpretacion) {
         this.interpretacion = interpretacion;
     }

@@ -43,7 +43,6 @@ public class Tesis extends Escrito{
 	        return referencias;
 	    }
 	    
-	    // Getter para el atributo 'interpretacion'
 	    public String getInterpretacion() {
 	        return interpretacion;
 	    }
@@ -53,7 +52,6 @@ public class Tesis extends Escrito{
 	    }
 
 	  
-	    // Setter para el atributo 'interpretacion'
 	    public void setInterpretacion(String interpretacion) {
 	        this.interpretacion = interpretacion;
 	    }
@@ -65,7 +63,6 @@ public class Tesis extends Escrito{
 	        this.idea = idea;
 	    }
 
-	    // Otros métodos y funcionalidades de la clase aquí
 
 	
 	
