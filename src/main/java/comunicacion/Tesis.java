@@ -26,9 +26,15 @@ public class Tesis extends Escrito{
 		
 	}
 	
-	public String[] getArgumentos() {
+	public int getArgumentos() {
+		int contador=0; 
+		for(int i=0;i<argumentos.length;i++) {
+			if(argumentos[i]!=null) {
+				contador++;
+			}
+		}
 		
-		return argumentos;
+		return contador;
 		
 	}
 	public String getIdea() {
