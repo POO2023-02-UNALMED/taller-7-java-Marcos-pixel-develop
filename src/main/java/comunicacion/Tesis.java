@@ -11,7 +11,6 @@ public class Tesis extends Escrito{
 	
 		super(origen,titulo,autor,paginas);
 		this.idea = idea;
-		this.conclusion=conclusion;
 		this.referencias = referencias;
 		this.interpretacion = interpretacion;
 		for(int i =0; i<argumentos.length;i++) {
