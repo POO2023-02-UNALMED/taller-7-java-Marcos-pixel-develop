@@ -29,7 +29,7 @@ public class Libro extends Escrito{
 		}
 		return cadena;
 	}
-	int palabrasTotales(int value) {
+	public int palabrasTotales(int value) {
 		int valor = this.getPaginas()*value*2;
 		return valor;
 	}
