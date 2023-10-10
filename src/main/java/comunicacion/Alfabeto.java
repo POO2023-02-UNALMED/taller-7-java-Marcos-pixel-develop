@@ -1,12 +1,14 @@
 package comunicacion;
 import java.util.ArrayList;
 public class Alfabeto extends Pictograma{
-	static String[] letras = {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"};
+	static String[] letras = new String[30];
 	public String interpretacion;
 	
-	public Alfabeto(String interpretacion){
-		super("");
-		
+	public Alfabeto(String origen, String[] letras , String interpretacion){
+		super(origen);
+		for(int i=0; i<letras.length;i++) {
+			Alfabeto.letras[i] = letras[i];
+		}
 		this.interpretacion=interpretacion;
 	}
 	
@@ -19,8 +21,17 @@ public class Alfabeto extends Pictograma{
 		
 	}
 	public  String toString() {
-		return "A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z";
+		String cadena = "";
+		for(int i =0; i<Alfabeto.letras.length;i++) {
+			if(Alfabeto.letras[i++] == null) {
+				cadena = cadena + Alfabeto.letras[i] ;
 				
+			}else {
+				cadena = cadena + Alfabeto.letras[i]+ ", ";
+			}
+			
+		}
+				return cadena;
 	}
 	
 
