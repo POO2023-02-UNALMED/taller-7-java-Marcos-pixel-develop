@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class Tesis extends Escrito{
 	public String idea,conclusion,referencias,interpretacion;
 	public String[] values = new String[6];
-	public ArrayList<String> argumentos = new ArrayList<>();
+	public static String[] argumentos = new String[100];
 
 	
 	public Tesis(String origen, String titulo, String autor,int paginas,String idea,String[] argumentos, String conclusion, String referencias,String interpretacion) {
@@ -15,7 +15,7 @@ public class Tesis extends Escrito{
 		this.referencias = referencias;
 		this.interpretacion = interpretacion;
 		for(int i =0; i<argumentos.length;i++) {
-			this.argumentos.add(argumentos[i]) ;
+			Tesis.argumentos[i]=argumentos[i] ;
 		}
 		values[0] = this.idea;
 		values[1] = this.conclusion;
@@ -23,16 +23,19 @@ public class Tesis extends Escrito{
 		values[3] = this.getTitulo();
 		values[4] = this.getAutor();
 		values[5] = Integer.toString(this.getPaginas());
-		argumentos[0] = this.idea;
-		argumentos[1]=this.conclusion;
-		argumentos[2] = this.referencias;
-		argumentos[3]= this.interpretacion;
+		
 	
 		
 	}
 	
 	public int getArgumentos() {
-		return argumentos.size();
+		int contador=0;
+		for(int j=0; j<100;j++) {
+			if(Tesis.argumentos[j] !=null) {
+				contador++;
+			}
+		}
+		return contador;
 		
 	}
 	public String getIdea() {
