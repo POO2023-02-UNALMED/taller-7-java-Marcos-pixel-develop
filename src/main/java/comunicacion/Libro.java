@@ -24,11 +24,9 @@ public class Libro extends Escrito{
 
 	}
 	public String toString() {
-		String cadena ="";
-		for(int j=0; j<values.length;j++) {
-			cadena = cadena + values[j] + "\n"; 
-		}
-		return cadena;
+		
+		return (this.getOrigen()+ "\n" + this.getTitulo() + "\n"+ this.getAutor() + "\n"+ this.getPaginas()+
+			"\n"+this.getCo_autor()+ "\n" + this.getEditorial()+ "\n" + this.getEdicion());
 	}
 	public int palabrasTotales(int value) {
 		int valor = this.getPaginas()*value*2;
