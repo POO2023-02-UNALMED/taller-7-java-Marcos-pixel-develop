@@ -8,10 +8,12 @@ public class Fabula extends Escrito{
 		super(origen,titulo,autor,paginas);
 		this.ensenanza=ensenanza;
 		this.interpretacion = interpretacion;
-		values[0] = this.ensenanza;
-		values[1] = this.getTitulo();
-		values[2] = this.getAutor();
-		values[3] = Integer.toString(this.getPaginas());
+		values[0] = origen;
+		values[1] = titulo;
+		values[2] = autor;
+		values[3] = Integer.toString(paginas);
+		values[4] = ensenanza;
+		
 	}
 
 	public String ensenanza, interpretacion;
@@ -28,7 +30,7 @@ public class Fabula extends Escrito{
 	}
 	public String toString() {
 		String cadena ="";
-		for(int j=0; j<5;j++) {
+		for(int j=0; j<values.length;j++) {
 			cadena = cadena + values[j] + "\n"; 
 		}
 		return cadena;	}

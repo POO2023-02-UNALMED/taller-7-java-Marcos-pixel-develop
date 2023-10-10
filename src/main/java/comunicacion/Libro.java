@@ -2,20 +2,21 @@ package comunicacion;
 
 public class Libro extends Escrito{
 	public String co_autor,editorial,edicion,interpretacion;
-	public String[] values = new String[6];
+	public String[] values = new String[7];
 	public Libro(String origen, String titulo, String autor,int paginas,String co_autor,String editorial,String edicion,String interpretacion){
 		super(origen,titulo,autor,paginas);
 		this.co_autor=co_autor;
 		this.editorial = editorial;
 		this.edicion=edicion;
 		this.interpretacion=interpretacion;
-		values[0] = this.co_autor;
-		values[1]= this.editorial;
-		values[2] = this.edicion;
-		values[3]= this.getTitulo();
-		values[4] = this.getAutor();
+		values[0] = origen;
+		values[1]= titulo;
+		values[2] = autor;
+		values[3]= Integer.toString(paginas);
+		values[4] = co_autor;
 		int valor = this.getPaginas(); 
-		values[5] = Integer.toString(valor);
+		values[5] = editorial;
+		values[6] = edicion;
 	}
 
 	public String interpretacion() {
@@ -24,7 +25,7 @@ public class Libro extends Escrito{
 	}
 	public String toString() {
 		String cadena ="";
-		for(int j=0; j<6;j++) {
+		for(int j=0; j<values.length;j++) {
 			cadena = cadena + values[j] + "\n"; 
 		}
 		return cadena;

@@ -2,17 +2,18 @@ package comunicacion;
 
 public class Periodico extends Escrito{
 	public String fecha,primicia,interpretacion;
-	public String[] values = new String[5];
+	public String[] values = new String[6];
 	public Periodico(String origen, String titulo, String autor,int paginas, String fecha,String primicia,String interpretacion){
 		super(origen,titulo,autor,paginas);
 		this.fecha = fecha;
 		this.primicia = primicia;
 		this.interpretacion = interpretacion;
-		values[0] = this.fecha;
-		values[1] = this.primicia;
-		values[2] = this.getTitulo();
-		values[3] = this.getAutor();
-		values[4] = Integer.toString(this.getPaginas());
+		values[0] = origen;
+		values[1] = titulo;
+		values[2] = autor;
+		values[3] = Integer.toString(paginas);
+		values[4] = fecha;
+		values[5] = primicia;
 		
 	}
 	
@@ -50,7 +51,7 @@ public class Periodico extends Escrito{
 	}
 	public String toString() {
 		String cadena ="";
-		for(int j=0; j<5;j++) {
+		for(int j=0; j<values.length;j++) {
 			cadena = cadena + values[j] + "\n"; 
 		}
 		return cadena;

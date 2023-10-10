@@ -3,7 +3,7 @@ package comunicacion;
 import java.util.ArrayList;
 public class Tesis extends Escrito{
 	public String idea,conclusion,referencias,interpretacion;
-	public String[] values = new String[6];
+	public String[] values = new String[8];
 	public static String[] argumentos = new String[100];
 
 	
@@ -15,12 +15,15 @@ public class Tesis extends Escrito{
 		this.conclusion= conclusion;
 		this.interpretacion = interpretacion;
 		Tesis.argumentos = argumentos;
-		values[0] = this.idea;
-		values[1] = this.conclusion;
-		values[2] = this.referencias;
-		values[3] = this.getTitulo();
-		values[4] = this.getAutor();
-		values[5] = Integer.toString(this.getPaginas());
+		values[0] = origen;
+		values[1] = titulo;
+		values[2] = autor;
+		values[3] = Integer.toString(paginas);
+		values[4] = idea;
+		values[5] = argumentos.toString();
+		values[6] = conclusion;
+		values[7] = referencias;
+		
 		
 	
 		
@@ -76,7 +79,7 @@ public class Tesis extends Escrito{
 	}
 	public String toString() {
 		String cadena ="";
-		for(int j=0; j<6;j++) {
+		for(int j=0; j<values.length;j++) {
 			cadena = cadena + values[j] + "\n"; 
 		}
 		return cadena;
