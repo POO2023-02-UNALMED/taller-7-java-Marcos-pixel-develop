@@ -1,9 +1,9 @@
 package comunicacion;
 
 public class Libro extends Escrito{
-	String co_autor,editorial,edicion,interpretacion;
-	String[] values = new String[6];
-	Libro(String origen, String titulo, String autor,int paginas,String co_autor,String editorial,String edicion,String interpretacion){
+	public String co_autor,editorial,edicion,interpretacion;
+	public String[] values = new String[6];
+	public Libro(String origen, String titulo, String autor,int paginas,String co_autor,String editorial,String edicion,String interpretacion){
 		super(origen,titulo,autor,paginas);
 		this.co_autor=co_autor;
 		this.editorial = editorial;

@@ -1,11 +1,11 @@
 package comunicacion;
 
 public class Tesis extends Escrito{
-	String idea,conclusion,referencias,interpretacion;
-	String[] values = new String[6];
-	String[] argumentos = new String[4];
+	public String idea,conclusion,referencias,interpretacion;
+	public String[] values = new String[6];
+	public String[] argumentos = new String[4];
 	
-	Tesis(String origen, String titulo, String autor,int paginas,String idea, String conclusion, String referencias,String interpretacion) {
+	public Tesis(String origen, String titulo, String autor,int paginas,String idea, String conclusion, String referencias,String interpretacion) {
 	
 		super(origen,titulo,autor,paginas);
 		this.idea = idea;

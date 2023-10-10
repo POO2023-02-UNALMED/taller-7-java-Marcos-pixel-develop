@@ -1,9 +1,9 @@
 package comunicacion;
 
 public class Periodico extends Escrito{
-	String fecha,primicia,interpretacion;
-	String[] values = new String[5];
-	Periodico(String origen, String titulo, String autor,int paginas, String fecha,String primicia,String interpretacion){
+	public String fecha,primicia,interpretacion;
+	public String[] values = new String[5];
+	public Periodico(String origen, String titulo, String autor,int paginas, String fecha,String primicia,String interpretacion){
 		super(origen,titulo,autor,paginas);
 		this.fecha = fecha;
 		this.primicia = primicia;

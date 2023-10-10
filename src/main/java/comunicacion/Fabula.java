@@ -1,8 +1,8 @@
 package comunicacion;
 
 public class Fabula extends Escrito{
-	String[] values = new String[5];
-	Fabula(String origen, String titulo, String autor,int paginas, String ensenanza, String interpretacion){
+	public String[] values = new String[5];
+	public Fabula(String origen, String titulo, String autor,int paginas, String ensenanza, String interpretacion){
 		
 
 		super(origen,titulo,autor,paginas);
@@ -14,7 +14,7 @@ public class Fabula extends Escrito{
 		values[3] = Integer.toString(this.getPaginas());
 	}
 
-	String ensenanza, interpretacion;
+	public String ensenanza, interpretacion;
 	
 	
 	
