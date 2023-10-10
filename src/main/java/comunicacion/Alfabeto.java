@@ -1,16 +1,19 @@
 package comunicacion;
-
+import java.util.ArrayList;
 public class Alfabeto extends Pictograma{
-	public String[] letras = new String[10];
+	ArrayList<String >letras = new ArrayList<>();
 	public String interpretacion;
 	
-	public Alfabeto(String interpretacion){
+	public Alfabeto(String[] letras , String interpretacion){
 		super("");
+		for(int i=0; i<letras.length;i++) {
+			this.letras.add(letras[i]);
+		}
 		this.interpretacion=interpretacion;
 	}
 	
 	public int cantidadLetras() {	
-		return letras.length; 
+		return letras.size(); 
 	}
 	public String interpretacion() {
 		return this.interpretacion;
